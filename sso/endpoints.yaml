@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Endpoints
+metadata:
+  name: sso
+subsets:
+- addresses:
+  - ip: 10.1.204.192
+  ports:
+  - name: sso
+    port: 8080
+    protocol: TCP
