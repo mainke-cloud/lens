@@ -20,6 +20,8 @@ spec:
           env:
             - name: DB_HOST
               value: 10.1.204.192
+            - name: MINIO_STORAGE_ENDPOINT
+              value: 10.1.204.192:9000
           ports:
             - containerPort: 8080
               protocol: TCP
